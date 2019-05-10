@@ -1,0 +1,29 @@
+
+.num-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: white;
+}
+
+.num-btn-content {
+  margin: 0;
+  font-size: 3em;
+  font-weight: 400;
+}
+
+.action-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #a02;
+}
+
+.action-btn-content {
+  margin: 0;
+  font-size: 4em;
+  font-weight: 400;
+  color: white;
+}

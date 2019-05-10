@@ -1,0 +1,19 @@
+
+.calc-display {
+  grid-area: display;
+
+  background: #202020;
+  color: white;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  padding: 1em;
+}
+
+.display-text {
+  margin: 0;
+  font-size: 4.5em;
+  font-weight: 400;
+}
