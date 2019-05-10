@@ -1,1 +1,28 @@
 /* All styles for your header Components live here */
+
+.image-thumbnail {
+  grid-area: logo;
+  width: 3rem;
+  height: 3rem;
+
+  background-position: center;
+  border-radius: 100%;
+  border: solid 1px black;
+}
+
+.header-content {
+  grid-area: header;
+  padding-top: 2px;
+}
+
+h2 {
+  margin: 0;
+  font-size: 0.85rem;
+}
+
+span {
+  font-weight: 400;
+  color: grey;
+  margin: 0 10px;
+  font-size: 0.8rem;
+}

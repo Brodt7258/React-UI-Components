@@ -1,1 +1,9 @@
 /* All styles for your Card Components live here */
+
+.card-container {
+  grid-area: content;
+}
+
+.card-banner {
+  width: 100%;
+}
