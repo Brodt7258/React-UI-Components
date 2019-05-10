@@ -5,6 +5,8 @@
   border-radius: 6px;
   border: 1px solid lightgrey;
   overflow: hidden;
+  text-decoration: none;
+  color: black;
 }
 
 .card-banner {
