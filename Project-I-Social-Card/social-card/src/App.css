@@ -9,15 +9,17 @@
 }
 
 .app {
-  margin: 0 auto;
+  margin: 3rem auto 0;
   padding: 0.55rem 1rem 0 0.6rem;
   width: 100%;
   max-width: 590px;
+  border-bottom: 1px solid lightgrey;
 
   display: grid;
   grid-template-rows: auto auto;
   grid-template-columns: auto 1fr;
   grid-template-areas: "logo header"
-                       ". content";
+                       ". content"
+                       ". footer";
   grid-gap: 10px;
 }
