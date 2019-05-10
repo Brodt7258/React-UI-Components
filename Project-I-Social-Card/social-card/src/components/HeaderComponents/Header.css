@@ -6,13 +6,13 @@
   height: 3rem;
 
   background-position: center;
-  border-radius: 100%;
-  border: solid 1px black;
 }
 
 .header-content {
   grid-area: header;
   padding-top: 2px;
+  font-size: 0.85rem;
+  letter-spacing: 0.03em;
 }
 
 h2 {
@@ -25,4 +25,9 @@ span {
   color: grey;
   margin: 0 10px;
   font-size: 0.8rem;
+}
+
+p {
+  margin: 0.6rem 0;
+  line-height: 1.3em;
 }
