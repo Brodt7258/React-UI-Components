@@ -38,7 +38,7 @@ const reducer = (state, { type, payload }) => {
       };
     case CALCULATE:
       return {
-        operand1: calc(state),
+        operand1: calcResult(state),
         operand2: null,
         operator: null
       };
@@ -49,9 +49,7 @@ const reducer = (state, { type, payload }) => {
   }
 };
 
-
-
-const calc = ({ operand1, operand2, operator }) => {
+const calcResult = ({ operand1, operand2, operator }) => {
   switch (operator) {
     case ADD:
       return operand1 + operand2;
@@ -76,10 +74,23 @@ const App = () => {
     });
   };
 
-  const enterNum = (n) => () => {
+  const enterNum = n => () => {
     dispatch({
       type: ENTER_NUM,
       payload: n
+    });
+  };
+
+  const enterOperator = op => () => {
+    dispatch({
+      type: ENTER_OPERATOR,
+      payload: op
+    });
+  };
+
+  const calculate = () => {
+    dispatch({
+      type: CALCULATE
     });
   };
 
@@ -93,7 +104,7 @@ const App = () => {
         handleClick={clearState}
       />
       <Keypad handleEnterNum={enterNum} />
-      <Operators />
+      <Operators handleEnterOp={enterOperator} handleCalc={calculate} />
     </div>
   );
 };
