@@ -22,13 +22,19 @@ export default ({ val1, op, val2 }) => {
   const opSymbol = getSymbol(op);
   return (
     <div className="calc-display">
-      <p>
-        {val2}
-        <span>{opSymbol}</span>
-      </p>
-      <h2 className="display-text">
-        {val1}
-      </h2>
+      <div className="top-display">
+        <p>
+          {val2}
+        </p>
+        <p>
+          {opSymbol}
+        </p>
+      </div>
+      <div className="main-display">
+        <h2 className="display-text">
+          {val1 || 0}
+        </h2>
+      </div>
     </div>
   );
 };
