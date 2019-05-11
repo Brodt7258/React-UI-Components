@@ -12,6 +12,33 @@ import Operators from './components/ButtonComponents/Operators';
 const App = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
+  const clearState = () => {
+    console.log('clearState');
+    dispatch({
+      type: CLEAR
+    });
+  };
+
+  const enterNum = n => () => {
+    dispatch({
+      type: ENTER_NUM,
+      payload: n
+    });
+  };
+
+  const enterOperator = op => () => {
+    dispatch({
+      type: ENTER_OPERATOR,
+      payload: op
+    });
+  };
+
+  const calculate = () => {
+    dispatch({
+      type: CALCULATE
+    });
+  };
+
   console.log(state);
   return (
     <div className="app-base">
@@ -19,32 +46,12 @@ const App = () => {
       <NumBtn
         text="clear"
         gridArea="clear"
-        handleClick={() => {
-          dispatch({
-            type: CLEAR
-          });
-        }}
+        handleClick={clearState}
       />
-      <Keypad 
-        handleEnterNum={n => () => {
-          dispatch({
-            type: ENTER_NUM,
-            payload: n
-          });
-        }}
-      />
-      <Operators
-        handleEnterOp={op => () => {
-          dispatch({
-            type: ENTER_OPERATOR,
-            payload: op
-          });
-        }}
-        handleCalc={() => {
-          dispatch({
-            type: CALCULATE
-          })
-        }}
+      <Keypad handleEnterNum={enterNum} />
+      <Operators 
+        handleEnterOp={enterOperator}
+        handleCalc={calculate}
       />
     </div>
   );
