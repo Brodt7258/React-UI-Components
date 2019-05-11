@@ -24,7 +24,7 @@ export default ({ val1, op, val2 }) => {
     <div className="calc-display">
       <div className="top-display">
         <p>
-          {val2}
+          {op ? val2 || 0 : val2}
         </p>
         <p>
           {opSymbol}

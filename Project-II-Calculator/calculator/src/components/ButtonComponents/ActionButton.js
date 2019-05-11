@@ -3,10 +3,10 @@ import './Button.css';
 
 export default ({ text, gridArea, background, color, handleClick }) => {
   return (
-    <div style={{ background, gridArea }} className="btn-base action-btn" onClick={handleClick}>
+    <button style={{ background, gridArea }} className="btn-base action-btn" onClick={handleClick}>
       <h3 style={{ color }} className="action-btn-content">
         {text}
       </h3>
-    </div>
+    </button>
   );
 };
