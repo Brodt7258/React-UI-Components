@@ -10,7 +10,7 @@ import Keypad from './components/ButtonComponents/Keypad';
 import Operators from './components/ButtonComponents/Operators';
 
 const App = () => {
-  const [state, dispatch] = useReducer(reducer, initialState);
+  const [ { operand1, operand2, operator }, dispatch] = useReducer(reducer, initialState);
 
   const clearState = () => {
     console.log('clearState');
@@ -39,10 +39,14 @@ const App = () => {
     });
   };
 
-  console.log(state);
+  //console.log(state);
   return (
     <div className="app-base">
-      <Display />
+      <Display 
+        val1={operator ? operand2 : operand1}
+        op={operator}
+        val2={operator ? operand1 : operand2}
+      />
       <NumBtn
         text="clear"
         gridArea="clear"
