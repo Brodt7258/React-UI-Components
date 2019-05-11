@@ -1,9 +1,12 @@
 
-.num-btn {
+
+.btn-base {
   display: flex;
   justify-content: center;
   align-items: center;
+}
 
+.num-btn {
   background: white;
 }
 
@@ -14,10 +17,6 @@
 }
 
 .action-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
   background: #a02;
 }
 

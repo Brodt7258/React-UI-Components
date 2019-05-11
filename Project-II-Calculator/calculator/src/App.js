@@ -68,6 +68,13 @@ const calc = ({ operand1, operand2, operator }) => {
 const App = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
+  const clearState = () => {
+    console.log('clearState');
+    dispatch({
+      type: 'CLEAR'
+    });
+  };
+
   console.log(state);
   return (
     <div className="app-base">
@@ -75,6 +82,7 @@ const App = () => {
       <NumBtn
         text="clear"
         gridArea="clear"
+        handleClick={clearState}
       />
       <Keypad />
       <Operators />

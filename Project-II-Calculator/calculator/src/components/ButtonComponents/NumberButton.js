@@ -1,9 +1,9 @@
 import React from 'react';
 import './Button.css';
 
-export default ({ text, gridArea }) => {
+export default ({ text, gridArea, handleClick }) => {
   return (
-    <div style={{ gridArea }} className="num-btn">
+    <div style={{ gridArea }} className="btn-base num-btn" onClick={handleClick}>
       <h3 className="num-btn-content">
         {text}
       </h3>
