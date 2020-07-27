@@ -1,0 +1,32 @@
+
+
+.btn-base {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+}
+
+.num-btn {
+  background: white;
+}
+
+.num-btn-content {
+  margin: 0;
+  font-size: 3em;
+  font-weight: 400;
+}
+
+.action-btn {
+  background: #a02;
+}
+
+.action-btn-content {
+  margin: 0;
+  font-size: 4em;
+  font-weight: 400;
+  color: white;
+}

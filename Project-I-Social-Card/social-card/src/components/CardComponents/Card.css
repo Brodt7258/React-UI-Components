@@ -1,1 +1,27 @@
 /* All styles for your Card Components live here */
+
+.card-container {
+  grid-area: content;
+  border-radius: 6px;
+  border: 1px solid lightgrey;
+  overflow: hidden;
+  text-decoration: none;
+  color: black;
+}
+
+.card-banner {
+  width: 100%;
+}
+
+.card-content {
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+}
+
+h3 {
+  margin: 0;
+}
+
+p {
+  margin-bottom: 0;
+}
