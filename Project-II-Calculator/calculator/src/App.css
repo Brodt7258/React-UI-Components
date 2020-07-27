@@ -7,6 +7,8 @@
   width: 456px;
   height: 598px;
   border: 2px solid lightgrey;
+  border-radius: 4px;
+  overflow: hidden;
   background: lightgrey;
 
   display: grid;

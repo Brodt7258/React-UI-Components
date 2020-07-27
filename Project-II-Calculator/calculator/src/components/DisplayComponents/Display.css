@@ -2,10 +2,9 @@
 .calc-display {
   grid-area: display;
 
+  border-radius: 4px;
   background: #202020;
   color: white;
-
-  
 
   padding: 1em;
 }

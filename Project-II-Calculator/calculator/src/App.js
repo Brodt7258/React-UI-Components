@@ -13,7 +13,6 @@ const App = () => {
   const [ { operand1, operand2, operator }, dispatch] = useReducer(reducer, initialState);
 
   const clearState = () => {
-    console.log('clearState');
     dispatch({
       type: CLEAR
     });
